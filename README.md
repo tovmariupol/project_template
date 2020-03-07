@@ -1,2 +1,2 @@
 # project_template
-Study Devops
+Typical repo for new devops project
