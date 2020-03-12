@@ -26,7 +26,7 @@ pipeline {
             steps {
                 echo " ============== start building image =================="
                 dir ('docker/toolbox') {
-                	sh 'docker build -t dockerhub_tov/toolbox:latest . '
+                	sh 'docker build -t tovmariupol/toolbox:latest . '
                 }
             }
         }
@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push dockerhub_tov/toolbox:latest
+                docker push tovmariupol/toolbox:latest
                 '''
             }
         }
